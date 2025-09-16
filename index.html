@@ -69,12 +69,12 @@ title: Jiateng Liu, Personal Home Page
 
 
   <div class="publications-section">
-    <h2>Publications</h2>
+    <h2>Peer-reviewed Publications</h2>
     
     <!-- Publication 1: EVEDIT -->
     <div class="publication-card">
       <div class="publication-image">
-        <img src="images/1.jpg" alt="EVEDIT: Event-based Knowledge Editing">
+        <img src="images/1.jpg" alt="EVEDIT: Event-based Knowledge Editing" onclick="openImageModal('images/1.jpg')">
       </div>
       <div class="publication-content">
         <div class="publication-tags">
@@ -93,7 +93,7 @@ title: Jiateng Liu, Personal Home Page
     <!-- Publication 2: Procedure Planning -->
     <div class="publication-card">
       <div class="publication-image">
-        <img src="images/2.jpg" alt="A Language First Approach for Procedure Planning">
+        <img src="images/2.jpg" alt="A Language First Approach for Procedure Planning" onclick="openImageModal('images/2.jpg')">
       </div>
       <div class="publication-content">
         <div class="publication-tags">
@@ -112,7 +112,7 @@ title: Jiateng Liu, Personal Home Page
     <!-- Publication 3: PropaInsight -->
     <div class="publication-card">
       <div class="publication-image">
-        <img src="images/3.jpg" alt="PropaInsight: Toward Deeper Understanding of Propaganda">
+        <img src="images/3.jpg" alt="PropaInsight: Toward Deeper Understanding of Propaganda" onclick="openImageModal('images/3.jpg')">
       </div>
       <div class="publication-content">
         <div class="publication-tags">
@@ -128,30 +128,10 @@ title: Jiateng Liu, Personal Home Page
       </div>
     </div>
 
-    <!-- Publication 4: MINT -->
+    <!-- Publication 4: Code Survey -->
     <div class="publication-card">
       <div class="publication-image">
-        <img src="images/4.jpg" alt="MINT: Evaluating LLMs in Multi-turn Interaction">
-      </div>
-      <div class="publication-content">
-        <div class="publication-tags">
-          <span class="publication-tag iclr">ICLR-2024</span>
-          <span class="publication-tag">LLM Evaluation</span>
-        </div>
-        <h3 class="publication-title">MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback</h3>
-        <div class="publication-authors">Xingyao Wang, Zihan Wang, <strong>Jiateng Liu</strong>, Yangyi Chen, Lifan Yuan, Hao Peng, Heng Ji</div>
-        <div class="publication-venue">Proceedings of the 12th International Conference on Learning Representations (ICLR 2024)</div>
-        <div class="publication-links">
-          <a href="https://arxiv.org/pdf/2309.10691.pdf" class="publication-link">Paper</a>
-          <a href="https://xingyaoww.github.io/mint-bench/" class="publication-link code">Code</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Publication 5: Code Survey -->
-    <div class="publication-card">
-      <div class="publication-image">
-        <img src="images/5.jpg" alt="If LLM Is the Wizard, Then Code Is the Wand">
+        <img src="images/5.jpg" alt="If LLM Is the Wizard, Then Code Is the Wand" onclick="openImageModal('images/5.jpg')">
       </div>
       <div class="publication-content">
         <div class="publication-tags">
@@ -167,10 +147,29 @@ title: Jiateng Liu, Personal Home Page
       </div>
     </div>
 
+    <!-- Publication 5: MINT -->
+    <div class="publication-card">
+      <div class="publication-image">
+        <img src="images/4.jpg" alt="MINT: Evaluating LLMs in Multi-turn Interaction" onclick="openImageModal('images/4.jpg')">
+      </div>
+      <div class="publication-content">
+        <div class="publication-tags">
+          <span class="publication-tag iclr">ICLR-2024</span>
+          <span class="publication-tag">LLM Evaluation</span>
+        </div>
+        <h3 class="publication-title">MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback</h3>
+        <div class="publication-authors">Xingyao Wang, Zihan Wang, <strong>Jiateng Liu</strong>, Yangyi Chen, Lifan Yuan, Hao Peng, Heng Ji</div>
+        <div class="publication-venue">Proceedings of the 12th International Conference on Learning Representations (ICLR 2024)</div>
+        <div class="publication-links">
+          <a href="https://arxiv.org/pdf/2309.10691.pdf" class="publication-link">Paper</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Publication 6: CurveCloudNet -->
     <div class="publication-card">
       <div class="publication-image">
-        <img src="images/6.jpg" alt="CurveCloudNet: Processing Point Clouds">
+        <img src="images/6.jpg" alt="CurveCloudNet: Processing Point Clouds" onclick="openImageModal('images/6.jpg')">
       </div>
       <div class="publication-content">
         <div class="publication-tags">
@@ -189,7 +188,7 @@ title: Jiateng Liu, Personal Home Page
     <!-- Publication 7: Knowledge Overshadowing -->
     <div class="publication-card">
       <div class="publication-image">
-        <img src="images/7.jpg" alt="Knowledge overshadowing causes amalgamated hallucination">
+        <img src="images/7.jpg" alt="Knowledge overshadowing causes amalgamated hallucination" onclick="openImageModal('images/7.jpg')">
       </div>
       <div class="publication-content">
         <div class="publication-tags">
@@ -203,6 +202,10 @@ title: Jiateng Liu, Personal Home Page
           <a href="https://arxiv.org/pdf/2407.08039" class="publication-link">Paper</a>
         </div>
       </div>
+    </div>
+    
+    <div style="margin-top: 40px; text-align: center; font-style: italic; color: #6b7280;">
+      For the full list of publications, please visit my <a href="https://scholar.google.com/citations?user=a5_PfQQAAAAJ&hl" style="color: #3b82f6; text-decoration: none;">Google Scholar page</a>.
     </div>
   </div>
 
@@ -268,4 +271,37 @@ title: Jiateng Liu, Personal Home Page
           </tr>
         </table>
 	
-</div><!-- /.blurb -->
+	</div><!-- /.blurb -->
+
+<!-- Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+    <img class="image-modal-content" id="modalImage">
+</div>
+
+<script>
+function openImageModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+}
+
+function closeImageModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// Close modal when clicking outside the image
+document.getElementById('imageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeImageModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeImageModal();
+    }
+});
+</script>
