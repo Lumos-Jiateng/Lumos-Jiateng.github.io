@@ -1,2 +1,2 @@
-# Lumos-Jiateng.github.io
+# jiateng.github.io
 Jiateng Home Page
