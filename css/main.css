@@ -59,9 +59,9 @@ ul.posts li {
     padding: 25px;
     display: flex;
     gap: 25px;
-    align-items: center;
+    align-items: flex-start;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    min-height: 180px;
+    min-height: 350px;
 }
 
 .publication-card:hover {
@@ -70,8 +70,8 @@ ul.posts li {
 }
 
 .publication-image {
-    flex: 0 0 450px;
-    height: 160px;
+    flex: 0 0 500px;
+    height: 300px;
     border-radius: 8px;
     overflow: hidden;
     background: #f8f9fa;
