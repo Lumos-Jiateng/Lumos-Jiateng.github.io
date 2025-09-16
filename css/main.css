@@ -70,7 +70,7 @@ ul.posts li {
 }
 
 .publication-image {
-    flex: 0 0 500px;
+    flex: 0 0 33.333%;
     height: 300px;
     border-radius: 8px;
     overflow: hidden;
@@ -88,7 +88,8 @@ ul.posts li {
 }
 
 .publication-content {
-    flex: 1;
+    flex: 0 0 66.667%;
+    padding-left: 20px;
 }
 
 .publication-tags {
@@ -359,6 +360,13 @@ ul.posts li {
         flex: none;
         width: 100%;
         height: 200px;
+    }
+    
+    .publication-content {
+        flex: none;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
     }
     
     .preprints-grid {
