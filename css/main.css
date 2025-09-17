@@ -568,3 +568,42 @@ ul.posts li {
     }
     
 }
+
+/* Profile Photo Hover Effect */
+.profile-photo-container {
+    position: relative;
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo-container:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo-main,
+.profile-photo-hover {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.profile-photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.profile-photo-container:hover .profile-photo-main {
+    opacity: 0;
+}
+
+.profile-photo-container:hover .profile-photo-hover {
+    opacity: 1;
+}
