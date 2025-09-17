@@ -485,26 +485,19 @@ ul.posts li {
     margin-bottom: 15px;
 }
 
-.company-name {
+.position-name {
     font-weight: 700;
     color: #1f2937;
     font-size: 1.1em;
     margin-right: 8px;
 }
 
-.team-name {
-    color: #3b82f6;
-    font-weight: 600;
+.company-name {
+    color: #1f2937;
+    font-weight: 500;
 }
 
-.work-experience-position {
-    font-weight: 600;
-    color: #374151;
-    font-size: 1.05em;
-    margin-bottom: 8px;
-}
-
-.work-experience-location {
+.work-experience-dates {
     color: #6b7280;
     font-size: 0.95em;
     margin-bottom: 12px;
