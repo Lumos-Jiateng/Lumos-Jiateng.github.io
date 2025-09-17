@@ -569,7 +569,7 @@ ul.posts li {
     
 }
 
-/* Profile Photo Hover Effect */
+/* Profile Photo Click Effect */
 .profile-photo-container {
     position: relative;
     width: 90%;
@@ -577,11 +577,16 @@ ul.posts li {
     height: auto;
     overflow: hidden;
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .profile-photo-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+}
+
+.profile-photo-container:active {
+    transform: scale(0.98);
 }
 
 .profile-photo-main,
@@ -600,10 +605,10 @@ ul.posts li {
     opacity: 0;
 }
 
-.profile-photo-container:hover .profile-photo-main {
+.profile-photo-container.show-hover .profile-photo-main {
     opacity: 0;
 }
 
-.profile-photo-container:hover .profile-photo-hover {
+.profile-photo-container.show-hover .profile-photo-hover {
     opacity: 1;
 }

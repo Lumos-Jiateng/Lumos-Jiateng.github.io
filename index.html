@@ -32,7 +32,7 @@ title: Jiateng Liu, Personal Home Page
             </td>
 
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <div class="profile-photo-container">
+              <div class="profile-photo-container" onclick="toggleProfilePhoto()">
                 <img class="profile-photo-main" alt="profile photo" src="images/profile.jpg">
                 <img class="profile-photo-hover" alt="profile photo hover" src="images/image2.jpg">
               </div>
@@ -387,4 +387,10 @@ document.addEventListener('keydown', function(e) {
         closeImageModal();
     }
 });
+
+// Toggle profile photo on click
+function toggleProfilePhoto() {
+    const container = document.querySelector('.profile-photo-container');
+    container.classList.toggle('show-hover');
+}
 </script>
