@@ -77,7 +77,7 @@ ul.posts li {
     display: flex;
     gap: 30px;
     align-items: flex-start;
-    min-height: 350px;
+    min-height: 500px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -118,27 +118,28 @@ ul.posts li {
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: auto;
-    max-height: 300px;
+    max-height: 400px;
     box-sizing: border-box;
     min-width: 0;
     padding-right: 10px;
+    height: 400px;
 }
 
 /* Custom scrollbar for research content */
 .research-content::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 .research-content::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
+    background: #e5e7eb;
+    border-radius: 5px;
     margin: 5px 0;
 }
 
 .research-content::-webkit-scrollbar-thumb {
     background: #3b82f6;
-    border-radius: 4px;
-    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    border: 2px solid #e5e7eb;
 }
 
 .research-content::-webkit-scrollbar-thumb:hover {
@@ -148,7 +149,22 @@ ul.posts li {
 /* Firefox scrollbar */
 .research-content {
     scrollbar-width: thin;
-    scrollbar-color: #3b82f6 #f1f1f1;
+    scrollbar-color: #3b82f6 #e5e7eb;
+}
+
+/* Add visual hint for scrollable content */
+.research-content::after {
+    content: "↓ Scroll to read more";
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 12px;
+    color: #6b7280;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0.7;
 }
 
 .research-tags {
