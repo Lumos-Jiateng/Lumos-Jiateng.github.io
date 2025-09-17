@@ -76,7 +76,8 @@ ul.posts li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 30px;
-    align-items: flex-start;
+    align-items: stretch;
+    min-height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -87,7 +88,7 @@ ul.posts li {
 
 .research-image {
     flex: 0 0 20%;
-    height: 120px;
+    min-height: 120px;
     border-radius: 12px;
     overflow: hidden;
     background: #f8f9fa;
@@ -111,6 +112,9 @@ ul.posts li {
 .research-content {
     flex: 0 0 80%;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .research-tags {
