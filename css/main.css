@@ -87,7 +87,7 @@ ul.posts li {
 }
 
 .research-image {
-    flex: 0 0 30%;
+    flex: 0 0 25%;
     height: 100%;
     border-radius: 12px;
     overflow: hidden;
@@ -110,13 +110,14 @@ ul.posts li {
 }
 
 .research-content {
-    flex: 0 0 70%;
+    flex: 0 0 75%;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: auto;
     max-height: 100%;
+    box-sizing: border-box;
 }
 
 /* Custom scrollbar for research content */
@@ -168,11 +169,15 @@ ul.posts li {
 .research-description {
     color: #4b5563;
     line-height: 1.6;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .research-description p {
     margin-bottom: 15px;
     font-size: 1em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .research-footer {
@@ -239,6 +244,9 @@ ul.posts li {
 .publication-content {
     flex: 0 0 66.667%;
     padding-left: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .publication-tags {
