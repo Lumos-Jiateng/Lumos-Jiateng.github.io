@@ -569,33 +569,102 @@ ul.posts li {
     
 }
 
+/* Header Section Layout */
+.header-section {
+    margin: 40px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.greeting-section {
+    flex: 1;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #1f2937;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #1f2937;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #3b82f6;
+}
+
+/* Introduction Section */
+.introduction-section {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+.introduction-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #374151;
+}
+
+.introduction-section a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.introduction-section a:hover {
+    text-decoration: underline;
+}
+
 /* Profile Photo Click Effect */
 .profile-photo-container {
     position: relative;
-    width: 90%;
-    max-width: 90%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 50%;
     cursor: pointer;
     transition: transform 0.2s ease;
+    flex-shrink: 0;
 }
 
 .profile-photo-container:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .profile-photo-container:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 .profile-photo-main,
 .profile-photo-hover {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
     transition: opacity 0.3s ease;
-    border-radius: 8px;
+    border-radius: 50%;
 }
 
 .profile-photo-hover {
@@ -611,4 +680,26 @@ ul.posts li {
 
 .profile-photo-container.show-hover .profile-photo-hover {
     opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .greeting {
+        font-size: 2rem;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+    }
+    
+    .profile-photo-container {
+        width: 120px;
+        height: 120px;
+    }
 }
