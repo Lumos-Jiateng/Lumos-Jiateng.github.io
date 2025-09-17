@@ -117,12 +117,12 @@ ul.posts li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    overflow-y: auto;
-    max-height: 400px;
+    overflow-y: scroll;
+    height: 400px;
     box-sizing: border-box;
     min-width: 0;
     padding-right: 10px;
-    height: 400px;
+    position: relative;
 }
 
 /* Custom scrollbar for research content */
@@ -197,8 +197,8 @@ ul.posts li {
 .research-description {
     color: #4b5563;
     line-height: 1.6;
-    overflow: hidden;
     word-wrap: break-word;
+    flex: 1;
 }
 
 .research-description p {
